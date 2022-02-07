@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Merriweather';
+    src: url("./assets/fonts/Merriweather/Merriweather-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 400;
+  }
+:root {
+    --first-color: #22254b;
+    --second-color: #373b69;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-color: var(--first-color);
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header {
+    background-color: var(--second-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+.search {
+    background-color: var(--second-color);
+    border-radius: 50px;
+    border: 2px solid var(--first-color);
+    color: white;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 10px;
+}
+.search:focus {
+    background-color: var(--first-color);
+    outline: 0px;
+}
+::placeholder {
+    color: #7378c5;
+}
+.footer {
+    background-color: var(--second-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
