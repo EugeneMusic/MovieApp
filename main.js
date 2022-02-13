@@ -4,20 +4,24 @@ let url = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&a
 document.getElementById('search').addEventListener('keydown', function(event) {
     if (event.key  === "Enter") {
         url = `https://api.themoviedb.org/3/search/movie?api_key=6b6e3d9b89131c14e442fabf8b936c2c&query=${this.value}`;
+        hideData();
         getData();
-        console.log(this.value)
   }
   });
 
 
 async function getData() {
-    console.log(url)
     const res = await fetch(url);
     const data = await res.json();
     console.log(data);
     showData(data);
 }
 getData();
+
+function hideData () {
+    const hide = document.querySelectorAll('.card');
+    hide.forEach(elem => elem.remove());
+}
 
 const main = document.querySelector('.main');
 
