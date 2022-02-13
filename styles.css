@@ -63,7 +63,8 @@
     background-color: var(--second-color);
     padding: 0.5rem 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     padding: 1rem;
 }
@@ -129,4 +130,32 @@
 }
 .red {
     color: red;
+}
+.gh-link {
+    color: var(--first-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.gh-link:hover {
+    color: #7378c5;
+}
+.footer span {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+.rs-school {
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.rs-school img:hover {
+    filter: invert(51%) sepia(12%) saturate(1875%) hue-rotate(199deg) brightness(93%) contrast(88%);
+}
+.rs-school img {
+    filter: invert(14%) sepia(18%) saturate(2025%) hue-rotate(197deg) brightness(93%) contrast(95%);
+    transition: all 0.3s ease-in-out;
 }
