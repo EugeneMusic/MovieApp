@@ -70,3 +70,11 @@ function showData(data) {
         overview.append(overviewTitle, `${data.results[index].overview}`);
     })
 }
+
+console.log (`
+Ваша отметка - 70 балла(ов)
+Отзыв по пунктам ТЗ:
+
+
+Все пункты выполнены полностью!
+`);
